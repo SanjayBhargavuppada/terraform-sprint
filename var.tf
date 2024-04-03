@@ -1,26 +1,26 @@
 # Define variables
-variable "resource_group_name" {
-  type        = string
-  description = "The name of the resource group to create."
-  default     = "example-rg02"
-}
-
 variable "location" {
   type        = string
-  description = "The location of the resource group and storage account. For example, 'eastus'."
-  default     = "eastus"
+  description = "The Azure region in which to deploy resources."
+  default     = "uksouth"
 }
 
-variable "storage_account_name" {
+variable "app_name" {
   type        = string
-  description = "The name of the storage account to create."
-  default     = "exampl0212"
+  description = "The name of the application."
+  default     = "app"
 }
 
-variable "account_tier" {
+variable "environment" {
   type        = string
-  description = "The tier of the storage account. For example, 'Standard'."
-  default     = "Standard"
+  description = "The environment in which the application is being deployed. For example, 'prod' or 'dev'."
+  default     = "dev"
+}
+
+variable "index" {
+  type        = number
+  description = "A unique index to differentiate between multiple instances of the same application."
+  default     = 1
 }
 
 variable "account_replication_type" {
@@ -29,3 +29,8 @@ variable "account_replication_type" {
   default     = "LRS"
 }
 
+variable "account_tier" {
+  type        = string
+  description = "The tier of the storage account. For example, 'Standard'."
+  default     = "Standard"
+}
