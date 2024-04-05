@@ -15,6 +15,7 @@ resource "azurerm_storage_account" "example" {
   location                  = var.location
   account_tier              = "Standard"
   account_replication_type  = "LRS"
+<<<<<<< HEAD
 }
 
 resource "azurerm_servicebus_namespace" "example" {
@@ -22,4 +23,6 @@ resource "azurerm_servicebus_namespace" "example" {
   location                  = var.location
   resource_group_name       = azurerm_resource_group.example.name
   sku                       = "Standard"
+=======
+>>>>>>> 859c23f64bfc01fbf6f6011f0ada52b329df4d9f
 }
