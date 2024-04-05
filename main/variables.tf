@@ -20,19 +20,19 @@ variable "tags" {
 
 variable "st_name" {
   description = "(Required) Specifies the name of the storage account. Changing this forces a new resource to be created. This must be unique across the entire Azure service, not just within the resource group."
-  default = "techslatestorage002"
+  default = "techslatestorage003"
 }
 
 variable "asp_name" {
   description = ""
-  default = "techslate-asp-002"
+  default = "techslate-asp-003"
 }
 
 variable "fun_name" {
   description = ""
-  default = "techslate-function-002"
+  default = "techslate-function-003"
 }
 
 variable "storage_account_access_key" {
-    default = "techslate-function-002"
+    default = "techslate-function-003"
 }
